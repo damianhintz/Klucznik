@@ -46,14 +46,14 @@ namespace KlucznikServer
             this.toolStripTextBoxPort = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButtonUruchom = new System.Windows.Forms.ToolStripButton();
             this.listView = new System.Windows.Forms.ListView();
-            this.columnHeader = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderZadania = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderAktywne = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderWykonane = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderProcent = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderSzybkosc = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderStatus = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderMode = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderZadania = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderAktywne = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderWykonane = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderProcent = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderSzybkosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderMode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStripListView = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.uruchomZadanieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zatrzymajZadanieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,6 +64,7 @@ namespace KlucznikServer
             this.statusStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.contextMenuStripListView.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -71,12 +72,15 @@ namespace KlucznikServer
             // 
             // menuStrip
             // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.configurationToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(686, 24);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.menuStrip.Size = new System.Drawing.Size(915, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -86,20 +90,20 @@ namespace KlucznikServer
             this.startToolStripMenuItem,
             this.stopToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.fileToolStripMenuItem.Text = "Serwer";
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.startToolStripMenuItem.Text = "Uruchom";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.stopToolStripMenuItem.Text = "Zatrzymaj";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
@@ -109,30 +113,32 @@ namespace KlucznikServer
             this.dodajZadanieToolStripMenuItem,
             this.usuñZadanieToolStripMenuItem});
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.configurationToolStripMenuItem.Text = "Zadania";
             // 
             // dodajZadanieToolStripMenuItem
             // 
             this.dodajZadanieToolStripMenuItem.Name = "dodajZadanieToolStripMenuItem";
-            this.dodajZadanieToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.dodajZadanieToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.dodajZadanieToolStripMenuItem.Text = "Dodaj...";
             this.dodajZadanieToolStripMenuItem.Click += new System.EventHandler(this.dodajZadanieToolStripMenuItem_Click);
             // 
             // usuñZadanieToolStripMenuItem
             // 
             this.usuñZadanieToolStripMenuItem.Name = "usuñZadanieToolStripMenuItem";
-            this.usuñZadanieToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.usuñZadanieToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.usuñZadanieToolStripMenuItem.Text = "Usuñ wszystkie";
             this.usuñZadanieToolStripMenuItem.Click += new System.EventHandler(this.usuñZadanieToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 415);
+            this.statusStrip.Location = new System.Drawing.Point(0, 516);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(686, 22);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(915, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "statusStrip";
             // 
@@ -144,42 +150,45 @@ namespace KlucznikServer
             // labelhash
             // 
             this.labelhash.AutoSize = true;
-            this.labelhash.Location = new System.Drawing.Point(166, 107);
+            this.labelhash.Location = new System.Drawing.Point(221, 132);
+            this.labelhash.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelhash.Name = "labelhash";
-            this.labelhash.Size = new System.Drawing.Size(0, 13);
+            this.labelhash.Size = new System.Drawing.Size(0, 17);
             this.labelhash.TabIndex = 17;
             // 
             // labelalfabet
             // 
             this.labelalfabet.AutoSize = true;
-            this.labelalfabet.Location = new System.Drawing.Point(166, 225);
+            this.labelalfabet.Location = new System.Drawing.Point(221, 277);
+            this.labelalfabet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelalfabet.Name = "labelalfabet";
-            this.labelalfabet.Size = new System.Drawing.Size(0, 13);
+            this.labelalfabet.Size = new System.Drawing.Size(0, 17);
             this.labelalfabet.TabIndex = 19;
             // 
             // toolStrip
             // 
+            this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabelPort,
             this.toolStripTextBoxPort,
             this.toolStripButtonUruchom});
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip.Location = new System.Drawing.Point(0, 28);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(686, 25);
+            this.toolStrip.Size = new System.Drawing.Size(915, 27);
             this.toolStrip.TabIndex = 25;
             this.toolStrip.Text = "toolStrip";
             // 
             // toolStripLabelPort
             // 
             this.toolStripLabelPort.Name = "toolStripLabelPort";
-            this.toolStripLabelPort.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabelPort.Size = new System.Drawing.Size(39, 24);
             this.toolStripLabelPort.Text = "Port:";
             // 
             // toolStripTextBoxPort
             // 
             this.toolStripTextBoxPort.MaxLength = 5;
             this.toolStripTextBoxPort.Name = "toolStripTextBoxPort";
-            this.toolStripTextBoxPort.Size = new System.Drawing.Size(100, 25);
+            this.toolStripTextBoxPort.Size = new System.Drawing.Size(132, 27);
             this.toolStripTextBoxPort.Text = "12345";
             // 
             // toolStripButtonUruchom
@@ -188,7 +197,7 @@ namespace KlucznikServer
             this.toolStripButtonUruchom.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonUruchom.Image")));
             this.toolStripButtonUruchom.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonUruchom.Name = "toolStripButtonUruchom";
-            this.toolStripButtonUruchom.Size = new System.Drawing.Size(53, 22);
+            this.toolStripButtonUruchom.Size = new System.Drawing.Size(73, 24);
             this.toolStripButtonUruchom.Text = "Uruchom";
             this.toolStripButtonUruchom.Click += new System.EventHandler(this.toolStripButtonUruchom_Click);
             // 
@@ -208,15 +217,16 @@ namespace KlucznikServer
             this.listView.FullRowSelect = true;
             this.listView.GridLines = true;
             this.listView.Location = new System.Drawing.Point(0, 0);
+            this.listView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listView.MultiSelect = false;
             this.listView.Name = "listView";
             this.listView.ShowGroups = false;
-            this.listView.Size = new System.Drawing.Size(682, 167);
+            this.listView.Size = new System.Drawing.Size(911, 211);
             this.listView.TabIndex = 26;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
-            this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
             this.listView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView_ItemSelectionChanged);
+            this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
             // 
             // columnHeader
             // 
@@ -259,31 +269,32 @@ namespace KlucznikServer
             // 
             // contextMenuStripListView
             // 
+            this.contextMenuStripListView.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripListView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uruchomZadanieToolStripMenuItem,
             this.zatrzymajZadanieToolStripMenuItem,
             this.usunZadanieToolStripMenuItem});
             this.contextMenuStripListView.Name = "contextMenuStripListView";
-            this.contextMenuStripListView.Size = new System.Drawing.Size(137, 70);
+            this.contextMenuStripListView.Size = new System.Drawing.Size(154, 82);
             // 
             // uruchomZadanieToolStripMenuItem
             // 
             this.uruchomZadanieToolStripMenuItem.Name = "uruchomZadanieToolStripMenuItem";
-            this.uruchomZadanieToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.uruchomZadanieToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.uruchomZadanieToolStripMenuItem.Text = "Aktywuj";
             this.uruchomZadanieToolStripMenuItem.Click += new System.EventHandler(this.uruchomZadanieToolStripMenuItem_Click);
             // 
             // zatrzymajZadanieToolStripMenuItem
             // 
             this.zatrzymajZadanieToolStripMenuItem.Name = "zatrzymajZadanieToolStripMenuItem";
-            this.zatrzymajZadanieToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.zatrzymajZadanieToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.zatrzymajZadanieToolStripMenuItem.Text = "Wstrzymaj";
             this.zatrzymajZadanieToolStripMenuItem.Click += new System.EventHandler(this.zatrzymajZadanieToolStripMenuItem_Click);
             // 
             // usunZadanieToolStripMenuItem
             // 
             this.usunZadanieToolStripMenuItem.Name = "usunZadanieToolStripMenuItem";
-            this.usunZadanieToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.usunZadanieToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.usunZadanieToolStripMenuItem.Text = "Usuñ";
             this.usunZadanieToolStripMenuItem.Click += new System.EventHandler(this.usunZadanieToolStripMenuItem_Click);
             // 
@@ -291,7 +302,8 @@ namespace KlucznikServer
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 49);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 55);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -302,24 +314,26 @@ namespace KlucznikServer
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.labelOpis);
-            this.splitContainer1.Size = new System.Drawing.Size(686, 366);
-            this.splitContainer1.SplitterDistance = 171;
+            this.splitContainer1.Size = new System.Drawing.Size(915, 461);
+            this.splitContainer1.SplitterDistance = 215;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 27;
             // 
             // labelOpis
             // 
             this.labelOpis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelOpis.Location = new System.Drawing.Point(0, 0);
+            this.labelOpis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOpis.Name = "labelOpis";
-            this.labelOpis.Size = new System.Drawing.Size(682, 187);
+            this.labelOpis.Size = new System.Drawing.Size(911, 237);
             this.labelOpis.TabIndex = 0;
             this.labelOpis.Click += new System.EventHandler(this.labelOpis_Click);
             // 
             // ServerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 437);
+            this.ClientSize = new System.Drawing.Size(915, 538);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.labelalfabet);
@@ -327,8 +341,9 @@ namespace KlucznikServer
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ServerForm";
-            this.Text = "Klucznik Serwer 2.3";
+            this.Text = "Klucznik Server v1.0";
             this.Load += new System.EventHandler(this.ServerForm_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -339,6 +354,7 @@ namespace KlucznikServer
             this.contextMenuStripListView.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

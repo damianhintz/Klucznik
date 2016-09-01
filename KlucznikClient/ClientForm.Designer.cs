@@ -42,12 +42,15 @@ namespace KlucznikClient
             // 
             // menuStrip
             // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientToolStripMenuItem,
             this.konfiguracjaToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(535, 24);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.menuStrip.Size = new System.Drawing.Size(713, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -57,65 +60,69 @@ namespace KlucznikClient
             this.startToolStripMenuItem,
             this.stopToolStripMenuItem});
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.clientToolStripMenuItem.Text = "Klient";
             // 
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.startToolStripMenuItem.Text = "Uruchom";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.stopToolStripMenuItem.Text = "Zatrzymaj";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
             // konfiguracjaToolStripMenuItem
             // 
             this.konfiguracjaToolStripMenuItem.Name = "konfiguracjaToolStripMenuItem";
-            this.konfiguracjaToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.konfiguracjaToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
             this.konfiguracjaToolStripMenuItem.Text = "Konfiguracja";
             this.konfiguracjaToolStripMenuItem.Click += new System.EventHandler(this.konfiguracjaToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 152);
+            this.statusStrip.Location = new System.Drawing.Point(0, 189);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(535, 22);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip.Size = new System.Drawing.Size(713, 25);
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip1";
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(38, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(49, 20);
             this.toolStripStatusLabel.Text = "Status";
             // 
             // labelTaskInfo
             // 
             this.labelTaskInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTaskInfo.Location = new System.Drawing.Point(0, 24);
+            this.labelTaskInfo.Location = new System.Drawing.Point(0, 28);
+            this.labelTaskInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTaskInfo.Name = "labelTaskInfo";
-            this.labelTaskInfo.Size = new System.Drawing.Size(535, 128);
+            this.labelTaskInfo.Size = new System.Drawing.Size(713, 161);
             this.labelTaskInfo.TabIndex = 2;
             // 
             // ClientForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 174);
+            this.ClientSize = new System.Drawing.Size(713, 214);
             this.Controls.Add(this.labelTaskInfo);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClientForm";
-            this.Text = "Klucznik Klient 2.3";
+            this.Text = "Klucznik Client v1.0";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
