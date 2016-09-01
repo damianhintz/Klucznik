@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klucznik", "Klucznik\Klucznik.csproj", "{CA2C0D32-C0B3-435A-8651-086E578C82E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlucznikServer", "KlucznikServer\KlucznikServer.csproj", "{0F29C201-F63D-4C60-84A0-39486D9750B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlucznikClient", "KlucznikClient\KlucznikClient.csproj", "{60A54CDB-1675-4217-995E-0C27A557FEFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CA2C0D32-C0B3-435A-8651-086E578C82E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA2C0D32-C0B3-435A-8651-086E578C82E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA2C0D32-C0B3-435A-8651-086E578C82E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F29C201-F63D-4C60-84A0-39486D9750B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F29C201-F63D-4C60-84A0-39486D9750B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F29C201-F63D-4C60-84A0-39486D9750B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F29C201-F63D-4C60-84A0-39486D9750B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A54CDB-1675-4217-995E-0C27A557FEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A54CDB-1675-4217-995E-0C27A557FEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A54CDB-1675-4217-995E-0C27A557FEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A54CDB-1675-4217-995E-0C27A557FEFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
